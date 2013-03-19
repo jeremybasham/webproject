@@ -432,7 +432,7 @@ a:active {
 	filter: alpha(opacity=80);
 	opacity: 0.8;
 	width: 100%;
-    overflow: hidden;
+/*    overflow: hidden;     */
 }
 
 hgroup {
@@ -453,7 +453,7 @@ hgroup {
 .site-navigation {
    width: 78%;
    float: left;
-   overflow: hidden;
+/*   overflow: hidden;   */
    margin-left: 0%;
 }
 
@@ -468,125 +468,32 @@ hgroup {
 }
 .main-navigation ul {
 	list-style: none;
-	margin-top: 30px;
+	margin-top: 30px;    
 	padding-left: 0;
 }
+
 .main-navigation li {
 	float: left;
 	position: relative;
 	padding: 0px 2%;
 	font-size: 18px;
-}
+} */
+
 .main-navigation a {
 	display: block;
 	text-decoration: none;
 }
-.main-navigation ul ul {
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	display: none;
-	float: left;
-	position: absolute;
-		top: 1.5em;
-		left: 0;
-	z-index: 99999;
-}
-.main-navigation ul ul ul {
-	left: 100%;
-	top: 0;
-}
-.main-navigation ul ul a {
-	width: 200px;
-}
-.main-navigation ul ul li {
-}
-.main-navigation li:hover > a {
-}
-.main-navigation ul ul :hover > a {
-}
-.main-navigation ul ul a:hover {
-}
-.main-navigation ul li:hover > ul {
-	display: block;
-}
-.main-navigation li.current_page_item a,
-.main-navigation li.current-menu-item a {
-}
 
+
+*/
 /* Small menu */
-.menu-toggle {
+
+/*.menu-toggle {
 	cursor: pointer;
 }
 .main-small-navigation .menu {
 	display: none;
-}
-
-
-
-/* = Menu Dropdown
------------------------------------------------ */  
-     
-    /* make the LI display inline */
-    /* it's position relative so that position absolute */
-    /* can be used in submenu */
-    #menu-main-menu li {
-        position: relative;
-        z-index: 500; 
-        margin: 0 1px;
-    }
-         
-    /* this is the parent menu */
-    /*#menu-main-menu li a {
-        display:block; 
-        padding:8px 5px 0 5px; 
-        font-weight:700;  
-        height:23px; 
-        text-decoration:none; 
-        color:#fff; 
-        text-align:center; 
-        color:#333;*/
-    }
- 
-    /*#menu-main-menu li a:hover {
-        color:#fff;
-    }*/
-     
-    /* you can make a different style for default selected value */
-    /*#menu-main-menu a.selected {
-        color:#f00;
-    }*/
-     
-        /* submenu, it's hidden by default */
-        .sub-menu ul {
-            position: absolute; 
-            left: 0; 
-            display: none; 
-            margin: 0 0 0 -1px; 
-            padding: 0; 
-            list-style: none;
-        }
-         
-        .sub-menu ul li {
-            width: 150px; 
-            float: left; 
-            border-top: 1px solid #fff;
-        }
-         
-        /* display block will make the link fill the whole area of LI */
-        .sub-menu ul a {
-            display: block;  
-            height: 15px;
-            padding: 8px 5px; 
-            color: #666;
-        }
-         
-        .sub-menu ul a:hover {
-            text-decoration:underline;  
-        }
-
-
-
+}*/
 
 
 
@@ -703,7 +610,7 @@ object {
 
 .site-content .site-navigation {
 	margin: 0 0 1.5em;
-	overflow: hidden;
+/*	overflow: hidden;    */
 }
 .site-content .nav-previous {
 	float: left;
@@ -909,4 +816,59 @@ artist_main_content {
    font-size: 10px;
    margin: 10px 7% 0 0;
 }
+
+
+
+/* = Menu Dropdown
+----------------------------------------------- */  
+
+#menu-main-menu > li {
+	float: left;
+	position:relative;
+	height: 50px;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+
+.sub-menu {
+	display:none;
+    padding: 0; 
+    list-style: none;
+	position: absolute;
+	top: 1em;
+	left: -28px;
+	z-index: 99999;
+	background: white;
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+
+         
+.sub-menu > li {
+    width: 142px; 
+    height: 40px;
+    padding: 15px 0 30px 0;
+    float: left; 
+    border-top: 2px solid #fff;
+    font-size: .7em;
+    text-align: center;
+}
+
+.sub-menu > li:hover {
+   /*background: #808080;
+   	zoom: 1;
+	filter: alpha(opacity=10);
+	opacity: 0.1;*/
+	background: lightgrey;
+}
+
+.sub-menu > li:hover > a {
+	color: #000;
+}
+
 
