@@ -4,21 +4,12 @@ Template Name: template-artist
 */
 ?>
 
+<img src="images/tattoos_elvy1.jpg" class="bg">
+
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>    
 
-
-       <!-- <div class="home_heading">
-
-            <h1><?php the_field('heading'); ?></h1>
-
-            <img src="<?php the_field('hero_image'); ?>" alt="" />
-
-            <?php the_field('description'); ?>
-
-        </div> -->
- 
         <div class="artist_main">
 			    <img src="<?php the_field('artist_image'); ?>" alt="" />
 				<h1><?php the_field('name'); ?></h1>
@@ -37,10 +28,9 @@ Template Name: template-artist
             </div>
         </div>
 
- 
-
-     
-
 <?php endwhile; // end of the loop. ?>
 
 <?php get_footer(); ?>
+
+
+     

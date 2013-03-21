@@ -210,9 +210,3 @@ function webproject_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'webproject_scripts' );
 
-
-
-/**
- * Implement the Custom Header feature
- */
-//require( get_template_directory() . '/inc/custom-header.php' );
