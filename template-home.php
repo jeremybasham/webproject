@@ -4,6 +4,8 @@ Template Name: template-home
 */
 ?>
 
+<?php echo ('<img src="'.get_template_directory_uri().'/images/tattoos_olympia.jpg" class="bg"/>'); ?>
+
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>            
@@ -19,7 +21,7 @@ Template Name: template-home
         </div>
 
  
-
+ 
         <div class="home_heading_main">
 
             <h1><?php the_field('heading_main'); ?></h1>
@@ -27,9 +29,9 @@ Template Name: template-home
             <?php the_content(); ?>
 
         </div>
+        
 
  
-
         <div class="home_heading_aside">
 
             <?php the_field('aside'); ?>

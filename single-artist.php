@@ -4,7 +4,7 @@ Template Name: template-artist
 */
 ?>
 
-<img src="images/tattoos_elvy1.jpg" class="bg">
+<?php echo ('<img src="'.get_template_directory_uri().'/images/tattoos_elvy1.jpg" class="bg"/>'); ?>
 
 <?php get_header(); ?>
 
@@ -31,6 +31,3 @@ Template Name: template-artist
 <?php endwhile; // end of the loop. ?>
 
 <?php get_footer(); ?>
-
-
-     
